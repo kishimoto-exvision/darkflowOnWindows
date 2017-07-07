@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e239cce4-8384-4a3b-875e-39729d2c1774}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>DarkflowWithCamera.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>darkflow</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{c29462c9-faa3-46b5-b19a-15aa9f57949c}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DarkflowWithCamera.py" />
+    <Compile Include="darkflow\darkflow\cli.py" />
+    <Compile Include="darkflow\darkflow\cython_utils\__init__.py" />
+    <Compile Include="darkflow\darkflow\dark\connected.py" />
+    <Compile Include="darkflow\darkflow\dark\convolution.py" />
+    <Compile Include="darkflow\darkflow\dark\darknet.py" />
+    <Compile Include="darkflow\darkflow\dark\darkop.py" />
+    <Compile Include="darkflow\darkflow\dark\layer.py" />
+    <Compile Include="darkflow\darkflow\dark\__init__.py" />
+    <Compile Include="darkflow\darkflow\defaults.py" />
+    <Compile Include="darkflow\darkflow\net\build.py" />
+    <Compile Include="darkflow\darkflow\net\flow.py" />
+    <Compile Include="darkflow\darkflow\net\framework.py" />
+    <Compile Include="darkflow\darkflow\net\help.py" />
+    <Compile Include="darkflow\darkflow\net\mnist\run.py" />
+    <Compile Include="darkflow\darkflow\net\ops\baseop.py" />
+    <Compile Include="darkflow\darkflow\net\ops\convolution.py" />
+    <Compile Include="darkflow\darkflow\net\ops\simple.py" />
+    <Compile Include="darkflow\darkflow\net\ops\__init__.py" />
+    <Compile Include="darkflow\darkflow\net\vanilla\train.py" />
+    <Compile Include="darkflow\darkflow\net\vanilla\__init__.py" />
+    <Compile Include="darkflow\darkflow\net\yolov2\data.py" />
+    <Compile Include="darkflow\darkflow\net\yolov2\predict.py" />
+    <Compile Include="darkflow\darkflow\net\yolov2\train.py" />
+    <Compile Include="darkflow\darkflow\net\yolov2\__init__.py" />
+    <Compile Include="darkflow\darkflow\net\yolo\data.py" />
+    <Compile Include="darkflow\darkflow\net\yolo\misc.py" />
+    <Compile Include="darkflow\darkflow\net\yolo\predict.py" />
+    <Compile Include="darkflow\darkflow\net\yolo\train.py" />
+    <Compile Include="darkflow\darkflow\net\yolo\__init__.py" />
+    <Compile Include="darkflow\darkflow\net\__init__.py" />
+    <Compile Include="darkflow\darkflow\utils\box.py" />
+    <Compile Include="darkflow\darkflow\utils\im_transform.py" />
+    <Compile Include="darkflow\darkflow\utils\loader.py" />
+    <Compile Include="darkflow\darkflow\utils\pascal_voc_clean_xml.py" />
+    <Compile Include="darkflow\darkflow\utils\process.py" />
+    <Compile Include="darkflow\darkflow\utils\__init__.py" />
+    <Compile Include="darkflow\darkflow\version.py" />
+    <Compile Include="darkflow\darkflow\__init__.py" />
+    <Compile Include="darkflow\setup.py" />
+    <Compile Include="darkflow\test\test_darkflow.py" />
+    <Compile Include="SimpleTest.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="darkflow\.travis.yml" />
+    <Content Include="darkflow\darkflow\cython_utils\cy_yolo2_findboxes.pyx" />
+    <Content Include="darkflow\darkflow\cython_utils\cy_yolo_findboxes.pyx" />
+    <Content Include="darkflow\darkflow\cython_utils\nms.pxd" />
+    <Content Include="darkflow\darkflow\cython_utils\nms.pyx" />
+    <Content Include="darkflow\flow" />
+    <Content Include="darkflow\labels.txt" />
+    <Content Include="darkflow\preview.png" />
+    <Content Include="darkflow\sample_img\sample_computer.jpg" />
+    <Content Include="darkflow\sample_img\sample_dog.jpg" />
+    <Content Include="darkflow\sample_img\sample_eagle.jpg" />
+    <Content Include="darkflow\sample_img\sample_giraffe.jpg" />
+    <Content Include="darkflow\sample_img\sample_horses.jpg" />
+    <Content Include="darkflow\sample_img\sample_office.jpg" />
+    <Content Include="darkflow\sample_img\sample_person.jpg" />
+    <Content Include="darkflow\sample_img\sample_scream.jpg" />
+    <Content Include="darkflow\test\requirements-testing.txt" />
+    <Content Include="darkflow\test\training\annotations\1.xml" />
+    <Content Include="darkflow\test\training\annotations\2.xml" />
+    <Content Include="darkflow\test\training\images\1.jpg" />
+    <Content Include="darkflow\test\training\images\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="darkflow" />
+    <Folder Include="darkflow\darkflow" />
+    <Folder Include="darkflow\darkflow\cython_utils" />
+    <Folder Include="darkflow\darkflow\dark" />
+    <Folder Include="darkflow\darkflow\net" />
+    <Folder Include="darkflow\darkflow\net\mnist" />
+    <Folder Include="darkflow\darkflow\net\ops" />
+    <Folder Include="darkflow\darkflow\net\vanilla" />
+    <Folder Include="darkflow\darkflow\net\yolo" />
+    <Folder Include="darkflow\darkflow\net\yolov2" />
+    <Folder Include="darkflow\darkflow\utils" />
+    <Folder Include="darkflow\sample_img" />
+    <Folder Include="darkflow\test" />
+    <Folder Include="darkflow\test\training\" />
+    <Folder Include="darkflow\test\training\annotations\" />
+    <Folder Include="darkflow\test\training\images" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{c29462c9-faa3-46b5-b19a-15aa9f57949c}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
